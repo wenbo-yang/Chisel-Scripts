@@ -1,11 +1,13 @@
 {
     "name": "chisel-scripts",
+    "type": "module",
     "version": "1.0.0",
     "description": "",
     "scripts": {
         "test": "npx jest --runInBand --./test/unit",
         "build": "npx tsc",
         "start": "node dist/app.js",
+        "startServices": "node dist/startServices.js",
         "watch": "npx tsc --watch",
         "prettier-ts": "prettier --parser typescript --config prettier.json --write \"**/*.ts\"",
         "prettier-json": "prettier --config prettier.json --write \"**/*.json\"",
